@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Form Pemesanan Barang</title>
+</head>
+<body>
+    <table cellspacing="50" align="center">
+        <tr>
+            <td> Home | </td>
+            <td> Register |</td>
+            <td> Policy |</td>
+            <td> About |</td>
+        </tr>
+    </table>
+    <table align="center">
+    <tr>
+        <td><img src="macbook.png" width="150" height="150" alt=""></td>
+        <td><label for="title">Title Here :</label></td>
+        <td> MacBook Air  $800 </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="desc">Description :</label></td>
+        <td>
+             Year : 2009
+             <br>
+             Model : -
+             <br> 
+             Condition : Mint 
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="account">Total Amount :</label></td>
+        <td> $800 </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="account">Pay To :</label></td>
+        <td> 123-456-789-0 </td>
+    </tr>
+    <tr>   
+        <td></td>
+        <td><label for="payment">Payment Type :</label></td>
+        <td>
+             <select name="payment" id="payment">
+                <option value="visa">Visa Debit</option>
+                <option value="E-Wallet">E-Wallet</option>
+                <option value="credit">Credit Card</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="holder">Account Holder :</label></td>
+        <td><input type="text" id="holder"></td>   
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="no">Account No :</label></td>
+        <td><input type="number" id="no"></td>   
+    </tr>
+    <tr>   
+        <td></td>
+        <td></td>
+        <td> 
+            <input type="checkbox" id="send" name="send">
+            <label style="color:green;"for="send">Send to Mobile Phone</label>
+        </td>
+    </tr>
+    <tr>   
+        <td></td>
+        <td></td>
+        <td> 
+            <input type="checkbox" id="send" name="send">
+            <label style="color:green;"for="send">Email me copy of transaction</label>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="send">Send to Mobile Phone </label></td>
+        <td> : <input type="number" id="send"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="send">Send to Email </label></td>
+        <td> : <input type="email" id="send"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><button>Pay using QuidLink</button></td>
+    </tr>
+    </table>
+</body>
+</html>

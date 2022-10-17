@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body> 
+    <table cellspacing="50" align="center">
+        <tr>
+            <td>Home |</td>
+            <td>Generate link |</td>
+            <td>Transaction History |</td>
+            <td>Policy |</td>
+            <td>Logout |</td>
+        </tr>
+    </table>
+    <table align="center">
+    <tr>
+        <td> 
+            <img src="" width="150" height="150" alt="">
+            <br>
+            <div>
+                <input id="image" type="file" name="profile_photo" placeholder="macbook" title="Upload Picture" required="">
+            </div>
+        </td>
+        <td>
+            <label for="title">Title Here</label>
+        </td>
+        <td>:<input type="text" id="title">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="deskripsi">Description</label></td>
+        <td>:<textarea id="deskripsi"></textarea></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="account">Account Number</label></td>
+        <td>:<input type="number" id="account"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <label for="bank">Bank</label>
+        </td>
+        <td>
+            :<select name="bank" id="bank">
+                <option value="HSBC">HSBC</option>
+                <option value="BCA">BCA</option>
+                <option value="BNI">BNI</option>
+                <option value="BRI">BRI</option>
+                <option value="BSI">BSI</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="holder">Account Holder</label></td>
+        <td>:<input type="text" id="holder"></td>   
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="Transaction">Transaction</label></td>
+        <td>:<input type="number" id="Transaction" name="Transaction" max="10" min="1"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><p>*if the transaction is for 3 person, choose 3 from the drop-down list</p></td>
+    </tr>
+    <tr>   
+        <td></td>
+        <td></td>
+        <td> 
+            <input type="checkbox" id="send" name="send">
+            <label style="color:green;"for="send">Send to Mobile Phone</label>
+        </td>
+    </tr>
+    <tr>   
+        <td></td>
+        <td></td>
+        <td> 
+            <input type="checkbox" id="send" name="send">
+            <label style="color:green;"for="send">Send to Email</label>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="phone">Send to Mobile Phone</label></td>
+        <td>:<input type="number" id="phone"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><label for="email">Send to Email </label></td>
+        <td>:<input type="email" id="email"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>
+            <form action="hasil_pemesanan_barang.html">
+            <button>Generate Nabr Link</button>
+            </form>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
