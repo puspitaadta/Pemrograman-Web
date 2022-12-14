@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+        <label for="name">Nama Pelanggan :</label>
+        <br>
+        <input type="text" name="name" id="name" maxlength="30">
+        <br>
+
+        <label for="email">Email :</label>
+        <br>
+        <input type="email" name="email" id="email">
+        <br>
+
+        <label for="jam">Jam Keberangkatan : </label>
+        <br>
+        <input type="time" name="time" id="jam" min="00:00" max="23:59">
+        <br>
+
+        <label for="tujuan">Tujuan :</label>
+        <br>
+        <input type="text" name="tujuan" id="tujuan" required>
+        <br>
+
+        <label for="tiket">Tiket :</label>
+        <br>
+        <input type="number" name="tiket" id="tiket" min="1" max="10">
+        <br>
+        <br>
+        <button type="submit" onclick="validate()">Submit</button>
+    <fieldset>
+        <legend >Data Pelanggan</legend>
+            <div>
+            <table>
+                <tr>
+                    <td>Nama Pelanggan : </td>
+                    <td id="getName"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td id="getEmail"></td>
+                </tr>
+                <tr>
+                    <td>Jam Keberangkatan : </td>
+                    <td id="getJam"></td>
+                </tr>
+                <tr>
+                    <td>Tujuan Keberangkatan : </td>
+                    <td id="getTujuan"></td>
+                </tr>
+                <tr>
+                <td>Jumlah Tiket : </td>
+                <td id="getJumlah"></td>
+            </tr>
+        </table>
+    </div>
+</fieldset>
+
+    <script>
+        function validate() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("jam").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+            if ( name && email && jam && tujuan && tiket == "") {
+                alert("Harap Isi Persyaratan Dengan Lengkap")
+            }
+
+            document.getElementById("getName").innerHTML = name ;
+            document.getElementById("getEmail").innerHTML = email ;
+            document.getElementById("getJam").innerHTML = jam ;
+            document.getElementById("getTujuan").innerHTML = tujuan ;
+            document.getElementById("getJumlah").innerHTML = tiket ;
+        }
+    </script>
+</body>
+</html>

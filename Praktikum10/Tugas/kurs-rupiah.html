@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah</legend>
+        <table border="3" cellspacing="12">
+            <tr>
+                <td>
+                    <label for="inputNilai">Masukkan Nilai</label>
+                </td>
+                <td> 
+                    <label for="Valas">Valas</label>
+                </td>
+                <td> 
+                    <label for="nilaiRupiah">Nilai Rupiah</label>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <input id="nilai">
+                </td>
+                <td> 
+                    <select id="valas">
+                        <option value="">----PILIH----</option>
+                        <option value="dollarus" id="dollarus" >Dollar US</option>
+                        <option value="dollarspore" id="dollarspore">Dollar Singapore</option>
+                        <option value="ringgit" id="ringgit">Ringgit Malaysia</option>
+                        <option value="yen" id="yen">Yen Jepang</option>
+                        <option value="euro" id="euro">Euro</option>
+                        <option value="riyal" id="euro">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td style="text-align: center;" id="hasil">
+                Hasil
+                </td>
+            </tr>
+        </table>
+        </legend>
+    <button type="submit" style="margin: 10px ; padding: 10px 20px;" onclick="Hitung()">Hitung</button>
+    <script>
+       function Hitung(){
+
+        let nilai = document.getElementById("nilai").value;
+        let select = document.getElementById("valas").value;
+
+        let dollarUs = 9915 
+        let dollarSingapore = 13472
+        let ringgitMalaysia = 874
+        let yenJapan = 120
+        let euro = 15888
+        let riyal =  3592
+
+        if (select == "dollarus" ) {
+             let hasil = nilai * dollarUs 
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        } else if (select == "dollarspore") {
+            let hasil = nilai * dollarSingapore
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        } else if (select == "ringgit") {
+            let hasil = nilai * ringgitMalaysia
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        } else if (select == "yen") {
+            let hasil = nilai * yenJapan
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        } else if (select == "euro") {
+            let hasil = nilai * euro
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        } else if (select == "riyal") {
+            let hasil = nilai * riyal
+            document.getElementById("hasil").innerHTML = "Rp" + hasil
+        }
+    } 
+    </script>
+    </fieldset>
+</body>
+</html>
